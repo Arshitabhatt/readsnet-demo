@@ -26,7 +26,7 @@ const express = require("express");
       app.set("view engine", "ejs");
       app.use(bodyParser.urlencoded({extended: true}));
 
-      mongoose.connect("mongodb+srv://thranduil:2m6KVbbi9W4Wn1kp@cluster0-66agq.gcp.mongodb.net/test?retryWrites=true&w=majority",{
+      mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://thranduil:2m6KVbbi9W4Wn1kp@cluster0-66agq.gcp.mongodb.net/test?retryWrites=true&w=majority",{
         useNewUrlParser: true,
         useCreateIndex: true
     }).then(()=>{
