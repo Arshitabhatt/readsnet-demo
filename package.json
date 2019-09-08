@@ -8,7 +8,7 @@
     "server":"nodemon app.js",
     "readsnet-front":"npm start --prefix readsnet-front",
     "dev": "concurrently \"npm run server\" \"npm run readsnet-front\"",
-    "heroku-postbuild": " NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix"
+    "heroku-postbuild": " NPM_CONFIG_PRODUCTION=false npm install --prefix readsnet-front && npm run build --prefix readsnet-front"
   },
   "author": "Arshita",
   "license": "ISC",
