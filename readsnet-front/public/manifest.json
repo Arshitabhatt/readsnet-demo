@@ -1,0 +1,11 @@
+{
+ "name": "App",
+ "icon": [
+  {
+   "src": "\/ms-icon-310x310.png",
+   "sizes": "310x310",
+   "type": "image\/png",
+   "density": "4.0"
+  }
+ ]
+}
