@@ -26,9 +26,9 @@ const express = require("express");
       app.set("view engine", "ejs");
       app.use(bodyParser.urlencoded({extended: true}));
 
-      const db = require('./config/key').mongoURI;
 
-      mongoose.connect(process.env.DATABASEURL,{
+
+      mongoose.connect("mongodb+srv://thranduil:2m6KVbbi9W4Wn1kp@cluster0-66agq.gcp.mongodb.net/test?retryWrites=true&w=majority",{
         useNewUrlParser: true,
         useCreateIndex: true
     }).then(()=>{
