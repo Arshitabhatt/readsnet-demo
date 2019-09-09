@@ -104,7 +104,7 @@ if(process.env.NODE_ENV === 'production'){
         res.sendFile(path.resolve(__dirname, 'readsnet-front', 'build', 'index.html'))
     })
 }
-app.listen(process.env.PORT || 3000, ()=>{
-    console.log('http://localhost:3000')
+app.listen(process.env.PORT || 5000, ()=>{
+    console.log('http://localhost:5000')
 });
 
